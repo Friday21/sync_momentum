@@ -1,6 +1,5 @@
 #/usr/bin/python3
 
-import os
 import time
 import requests
 from PIL import Image
@@ -9,7 +8,8 @@ from urllib.request import urlretrieve
 client_id = 'a0ee951a-1a0b-4fa2-91fb-173f556002c2'
 
 directory = '/root/blog_flask/my_spirit_home/static/assets/img'
-filename = directory + 'bg.jpg'
+filename = directory + '/bg.jpg'
+bg_blur = directory + '/bg_blur.jpg'
 today = time.strftime("%Y-%m-%d")
 
 headers = {
@@ -32,3 +32,5 @@ if image_url:
     img = Image.open(filename)
     new_img = img.resize((1536, 1023), Image.ANTIALIAS)
     new_img.save(filename, quility=100)
+    new_img_blur = img.resize((153, 102), Image.ANTIALIAS)
+    new_img_blur.save(bg_blur, quility=100)
