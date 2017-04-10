@@ -8,8 +8,8 @@ from urllib.request import urlretrieve
 
 client_id = 'a0ee951a-1a0b-4fa2-91fb-173f556002c2'
 
-directory = os.path.dirname(os.path.realpath(__file__)) + '/pictures/'
-filename = 'test'+ '.jpg'
+directory = '/root/blog_flask/my_spirit_home/static/assets/img'
+filename = directory + 'bg.jpg'
 today = time.strftime("%Y-%m-%d")
 
 headers = {
