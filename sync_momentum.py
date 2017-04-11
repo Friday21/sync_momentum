@@ -17,7 +17,11 @@ headers = {
     'Accept': '*/*',
     'X-Momentum-ClientId': client_id,
     'X-Momentum-Version': '0.92.2',
-    'Content-Type': 'application/json'
+    'X-Momentum-ClientDate': today,
+    'X-Requested-With': 'XMLHttpRequest',
+    'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+    'Content-Type': 'application/json',
+    'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2d1aWQiOiJhZjAxOTFiMi1lOTM3LTRiM2ItYjM0OS01MDAzYWQ1OWVmNmEiLCJpc3MiOiJsb2dpbi1hcGktdjEiLCJleHAiOjE1MTcxMjk4NTAsIm5iZiI6MTQ4NTU5Mzg1MH0.pBfEBUQYZnF0vHCv8I_h8PWDr3bkfqAhjZ-toRc1x6U'
 }
 
 r = requests.get('https://api.momentumdash.com/feed/bulk?syncTypes=backgrounds&localDate=' + today, headers=headers)
