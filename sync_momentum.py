@@ -5,7 +5,7 @@ import requests
 from PIL import Image
 from urllib.request import urlretrieve
 
-client_id = '这里是你自己chrome 访问插件Momentum的ID， 打开个新窗口看下访问数据就知道了'
+client_id = 'a0ee951a-1a0b-4fa2-91fb-173f556002c'
 
 directory = '/root/blog_flask/my_spirit_home/static/assets/img'
 filename = directory + '/bg.jpg'
