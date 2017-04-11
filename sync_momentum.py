@@ -5,7 +5,7 @@ import requests
 from PIL import Image
 from urllib.request import urlretrieve
 
-client_id = 'a0ee951a-1a0b-4fa2-91fb-173f556002c'
+client_id = '在chrome中打开个新窗口，在访问backgrounds.json的连接的头文件中查找'
 
 directory = '/root/blog_flask/my_spirit_home/static/assets/img'
 filename = directory + '/bg.jpg'
@@ -21,7 +21,7 @@ headers = {
     'X-Requested-With': 'XMLHttpRequest',
     'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
     'Content-Type': 'application/json',
-    'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2d1aWQiOiJhZjAxOTFiMi1lOTM3LTRiM2ItYjM0OS01MDAzYWQ1OWVmNmEiLCJpc3MiOiJsb2dpbi1hcGktdjEiLCJleHAiOjE1MTcxMjk4NTAsIm5iZiI6MTQ4NTU5Mzg1MH0.pBfEBUQYZnF0vHCv8I_h8PWDr3bkfqAhjZ-toRc1x6U'
+    'Authorization':'在chrome中打开个新窗口，在访问backgrounds.json的连接的头文件中查找'
 }
 
 r = requests.get('https://api.momentumdash.com/feed/bulk?syncTypes=backgrounds&localDate=' + today, headers=headers)
